@@ -33,7 +33,7 @@ def communicate():
 st.title("My AI Assistant")
 st.write("I'm an English learning assistant AI with language generation capabikities.I will help you learn English.")
 
-user_input = st.text_input("Please enter your message below.。", key="user_input", on_change=communicate)
+user_input = st.text_input("Please enter your message below.", key="user_input", on_change=communicate)
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
